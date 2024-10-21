@@ -11,8 +11,8 @@ param userAssignedIdentityName string
 @description('The name of the Log Analytics Workspace used by Application Insigths.')
 param logAnalyticsWorkspaceName string
 
-@description('The name of the Automation Account.')
-param automationAccountName string
+/* @description('The name of the Automation Account.')
+param automationAccountName string */
 
 @description('The name of Application Insights.')
 param applicationInsightsName string
