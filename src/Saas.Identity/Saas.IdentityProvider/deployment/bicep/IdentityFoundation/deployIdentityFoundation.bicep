@@ -44,13 +44,14 @@ var applicationInsightsName = 'appi-${solutionPrefix}-${solutionName}-${solution
 var logAnalyticsWorkspaceName = 'log-${solutionPrefix}-${solutionName}-${solutionPostfix}'
 /* var automationAccountName = 'aa-${solutionPrefix}-${solutionName}-${solutionPostfix}' */
 
-var signupAdminAppName = 'signupadmin-app'
-var saasAppName = 'saas-app'
+var signupAdminAppName = 'mainweb-app'
+var saasAppName = 'tenant-app'
 
 resource userAssignedIdentity 'Microsoft.ManagedIdentity/userAssignedIdentities@2022-01-31-preview' = {
   name: userAssignedIdentityName
   location: location
 }
+
 module secretGenerator './Module/createSecret.bicep' = {
   name: 'SecretsGenerator'
   params: {
@@ -114,7 +115,7 @@ module restApiKeyModule './Module/linkToExistingKeyVaultSecret.bicep' = {
 }
 
 var azureAdB2cKeyName = 'AzureB2C'
-var signupAdminKeyName = 'SignupAdmin'
+var signupAdminKeyName = 'MainWebAppAdmin'
 module signupAdminModule './Module/linkToExistingKeyVaultSecret.bicep' = {
   name: 'SignupAdminSecretDeployment'
   params: {
@@ -132,7 +133,7 @@ module signupAdminModule './Module/linkToExistingKeyVaultSecret.bicep' = {
   ]
 }
 
-var saasAppKeyName = 'SaasApp'
+var saasAppKeyName = 'TenantApp'
 
 module saasAppModule './Module/linkToExistingKeyVaultSecret.bicep' = {
   name: 'SaasAppSecretDeployment'
