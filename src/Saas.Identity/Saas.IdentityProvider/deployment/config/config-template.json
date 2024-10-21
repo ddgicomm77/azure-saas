@@ -9,8 +9,8 @@
       "solutionName": "test"
     },
     "azureb2c": {
-      "location": "Europe",
-      "countryCode": "DK",
+      "location": "United States",
+      "countryCode": "US",
       "skuName": "PremiumP1",
       "tier": "A0"
     }
@@ -124,7 +124,7 @@
       ]
     },
     {
-      "name": "signupadmin-app",
+      "name": "mainweb-app",
       "appServiceName": null,
       "certificate": true,
       "hasSecret": true,
@@ -160,7 +160,7 @@
       ]
     },
     {
-      "name": "saas-app",
+      "name": "tenant-app",
       "appServiceName": null,
       "certificate": true,
       "hasSecret": true,
