@@ -1,0 +1,45 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "version": {
+        "value": "0.8.0"
+      },
+      "keyVaultName": {
+        "value": "kv-saas-cloudsbx-q8ry"
+      },
+      "keyVaultUri": {
+        "value": "https://kv-saas-cloudsbx-q8ry.vault.azure.net/"
+      },
+      "azureB2CDomain": {
+        "value": "saascloudsbxq8ry.onmicrosoft.com"
+      },
+      "azureB2cTenantId": {
+        "value": "2e89036b-ffd6-4e07-8e62-08e2fa65de86"
+      },
+      "azureAdB2CInstanceURL": {
+        "value": "https://login.microsoftonline.com/"
+      },
+      "signedOutCallBackPath": {
+        "value": "/signout/B2C_1A_SIGNUP_SIGNIN"
+      },
+      "signUpSignInPolicyId": {
+        "value": "B2C_1A_SIGNUP_SIGNIN"
+      },
+      "baseUrl": {
+        "value": "https://sbx-permissions-api.azurewebsites.net"
+      },
+      "clientId": {
+        "value": "106563a2-f4ef-4a4a-a791-10006d418cb5"
+      },
+      "userAssignedIdentityName": {
+        "value": "user-assign-id-saas-cloudsbx-q8ry"
+      },
+      "appConfigurationName": {
+        "value": "appconfig-saas-cloudsbx-q8ry"
+      },
+      "certificateKeyName": {
+        "value": "cert-permissions-api"
+      }
+}
+}

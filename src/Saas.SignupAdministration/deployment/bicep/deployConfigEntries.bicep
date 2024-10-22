@@ -56,7 +56,7 @@ var certificates = [
 ]
 
 var azureB2CKeyName = 'AzureB2C'
-var signupAdminKeyName = 'SignupAdmin'
+var signupAdminKeyName = 'MainWebAdmin'
 var claimToRoleTransformerKeyName = 'ClaimToRoleTransformer'
 
 var appConfigStore = {

@@ -1,0 +1,54 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "version": {
+        "value": "0.8.0"
+      },
+      "keyVaultName": {
+        "value": "kv-saas-cloudsbx-q8ry"
+      },
+      "azureB2CDomain": {
+        "value": "saascloudsbxq8ry.onmicrosoft.com"
+      },
+      "azureB2cTenantId": {
+        "value": "2e89036b-ffd6-4e07-8e62-08e2fa65de86"
+      },
+      "azureAdB2CInstanceURL": {
+        "value": "https://login.microsoftonline.com/"
+      },
+      "signedOutCallBackPath": {
+        "value": "/signout/B2C_1A_SIGNUP_SIGNIN"
+      },
+      "signUpSignInPolicyId": {
+        "value": "B2C_1A_SIGNUP_SIGNIN"
+      },
+      "baseUrl": {
+        "value": "https://sbx-admin-api.azurewebsites.net"
+      },
+      "clientId": {
+        "value": "a7274b59-53c3-4d8e-b36e-72756e501809"
+      },
+      "userAssignedIdentityName": {
+        "value": "user-assign-id-saas-cloudsbx-q8ry"
+      },
+      "appConfigurationName": {
+        "value": "appconfig-saas-cloudsbx-q8ry"
+      },
+      "authenticationType": {
+        "value": "OpenIdConnect"
+      },
+      "roleClaimType": {
+        "value": "Roles"
+      },
+      "sourceClaimType": {
+        "value": "sub"
+      },
+      "applicationIdUri": {
+        "value": "https://saascloudsbxq8ry.onmicrosoft.com/admin-api"
+      },
+      "adminApiScopes": {
+        "value": "[ \"tenant.global.delete\",\"tenant.delete\",\"global.write\",\"tenant.write\",\"tenant.global.read\",\"tenant.read\"]"
+      }
+}
+}

@@ -1,0 +1,36 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "permissionsapi": {
+        "value": "sbx-permissions-api"
+      },
+      "version": {
+        "value": "0.8.0"
+      },
+      "environment": {
+        "value": "Development"
+      },
+      "appServicePlanName": {
+        "value": "plan-saas-cloudsbx-q8ry"
+      },
+      "keyVaultUri": {
+        "value": "https://kv-saas-cloudsbx-q8ry.vault.azure.net/"
+      },
+      "location": {
+        "value": "East US"
+      },
+      "userAssignedIdentityName": {
+        "value": "user-assign-id-saas-cloudsbx-q8ry"
+      },
+      "appConfigurationName": {
+        "value": "appconfig-saas-cloudsbx-q8ry"
+      },
+      "logAnalyticsWorkspaceName": {
+        "value": "log-saas-cloudsbx-q8ry"
+      },
+      "applicationInsightsName": {
+        "value": "appi-saas-cloudsbx-q8ry"
+      }
+}
+}

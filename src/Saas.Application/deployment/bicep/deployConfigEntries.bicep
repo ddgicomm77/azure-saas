@@ -47,7 +47,7 @@ var certificates = [
 ]
 
 var azureB2CKeyName = 'AzureB2C'
-var saasAppKeyName = 'SaasApp'
+var saasAppKeyName = 'TenantApp'
 
 var appConfigStore = {
   appConfigurationName: appConfigurationName
